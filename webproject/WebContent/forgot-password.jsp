@@ -32,10 +32,10 @@
                 </b>
 
                 <form method="post" action="UserController">
-                  <p>Please login to your account</p>
-
-                  <div class="form-outline mb-4">
-                    <input type="email" id="form2Example11" class="form-control" id="name" name="email"
+                 
+                               
+                 <div class="form-outline mb-4">
+                    <input type="text" id="form2Example11" class="form-control" id="name" name="email"
                       placeholder="email address" />
                     <label class="form-label" for="form2Example11">email address</label>
                   </div>

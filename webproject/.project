@@ -30,9 +30,29 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>WebContent/WEB-INF/lib/mysql-connector-java-5.1.11.jar</name>
+			<name>WebContent/images/4703650.png</name>
 			<type>1</type>
-			<location>C:/Users/BHARGAV/Downloads/mysql-connector-java-5.1.11.jar/mysql-connector-java-5.1.11.jar</location>
+			<location>C:/Users/BHARGAV/Downloads/4703650.png</location>
+		</link>
+		<link>
+			<name>WebContent/images/ff60dabf9e125502f57d62758c9f519c.png</name>
+			<type>1</type>
+			<location>C:/Users/BHARGAV/Downloads/ff60dabf9e125502f57d62758c9f519c.png</location>
+		</link>
+		<link>
+			<name>WebContent/images/icon1-removebg-preview.png</name>
+			<type>1</type>
+			<location>C:/Users/BHARGAV/Downloads/icon1-removebg-preview.png</location>
+		</link>
+		<link>
+			<name>WebContent/images/mouse-removebg-preview.png</name>
+			<type>1</type>
+			<location>C:/Users/BHARGAV/Downloads/mouse-removebg-preview.png</location>
+		</link>
+		<link>
+			<name>WebContent/images/png-transparent-girl-and-laptop-removebg-preview.png</name>
+			<type>1</type>
+			<location>C:/Users/BHARGAV/Downloads/png-transparent-girl-and-laptop-removebg-preview.png</location>
 		</link>
 	</linkedResources>
 </projectDescription>

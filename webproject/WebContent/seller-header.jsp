@@ -33,7 +33,7 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.jsp">
+          <a class="navbar-brand" href="seller-index.jsp">
             <img src="images/radhe.png" alt="" /><span>
               Radhe
             </span>
@@ -79,8 +79,8 @@
                 	 if(session.getAttribute("u")!=null){
                 		 u=(User)session.getAttribute("u");
                %>
-                <a href="index.jsp">Buyer page</a>
-                <a href="product.jsp">VIEW PRODUCTS</a>
+                <a href="add-product.jsp">Add Product</a>
+                <a href="view-product.jsp">VIEW PRODUCTS</a>
                 <a href="logout.jsp">logout</a>
                 <a href="changepass.jsp">Change Password</a>
                <%
@@ -88,8 +88,8 @@
                 	 else
                 	 {
                 %>
-                <a href="index.jsp">Buyer page</a>
-                <a href="product.jsp">VIEW PRODUCTS</a>
+                <a href="index.jsp">HOME</a>
+                <a href="product.jsp">PRODUCTS</a>
                 <a href="login.jsp">login</a>
                 <a href="signup.jsp">register</a>
                 <%
@@ -98,8 +98,8 @@
                  else
                  {
                 %>
-                    <a href="index.jsp">Buyer page</a>
-                    <a href="product.jsp">VIEW PRODUCTS</a>
+                    <a href="index.jsp">HOME</a>
+                    <a href="product.jsp">PRODUCTS</a>
                     <a href="login.jsp">login</a>
                     <a href="signup.jsp">register</a>
                 <%

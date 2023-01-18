@@ -1,5 +1,10 @@
+<%@page import="com.dao.ProductDao"%>
+<%@page import="com.bean.Product"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+    
 <!DOCTYPE html>
 <html>
 
@@ -62,7 +67,8 @@
                     </div>
                     <div class="col-md-6">
                       <div class="hero_img-box">
-                        <img src="images/hero.png" alt="" />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="images/png-transparent-girl-and-laptop-removebg-preview.png" alt="" style=" height:525px; width:500px" />
                       </div>
                     </div>
                   </div>
@@ -78,10 +84,9 @@
                     <div class="offset-md-2 col-md-4">
                       <div class="slider_item-detail">
                         <div>
-                          <h2 class="slider_heading">
-                            2 Years Extra Warranty <br />
-                            in OpenBox Laptops 
-                          </h2>
+                          <h3 class="slider_heading">
+                           Open-Box Laptop
+                          </h3>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore
@@ -99,7 +104,7 @@
                     <div class="col-md-6">
                       <div class="hero_img-box">
                         
-                        <img src="images/laptop.png" height=740"  alt="" />
+                        <img src="images/laptop.png" style=" height:525px; width:500px"  alt="" />
                       </div>
                     </div>
                   </div>
@@ -170,9 +175,9 @@
             <div class="detail-box d-box-1">
               <a href="">
                 <div class="detail-content">
-                  <img src="images/d-1.png" alt="" />
+                  <img src="images/icon1-removebg-preview.png" alt="" />
                   <h5>
-                    Care kids
+                    Laptop
                   </h5>
                 </div>
               </a>
@@ -180,9 +185,9 @@
             <div class="detail-box d-box-2">
               <a href="">
                 <div class="detail-content">
-                  <img src="images/d-2.png" alt="" />
+                  <img src="images/4703650.png" alt="" />
                   <h5>
-                    Baby boy
+                    Desktop
                   </h5>
                 </div>
               </a>
@@ -190,19 +195,29 @@
             <div class="detail-box d-box-3">
               <a href="">
                 <div class="detail-content">
-                  <img src="images/d-3.png" alt="" />
+                  <img src="images/mouse-removebg-preview.png" alt="" />
                   <h5>
-                    Baby girl
+                    Accessories
                   </h5>
                 </div>
               </a>
             </div>
-            <div class="detail-box d-box-4">
+            <div class="detail-box d-box-2">
               <a href="">
                 <div class="detail-content">
                   <img src="images/d-4.png" alt="" />
                   <h5>
-                    Buy
+                    Cart
+                  </h5>
+                </div>
+              </a>
+            </div>
+            <div class="detail-box d-box-1">
+              <a href="">
+                <div class="detail-content">
+                  <img src="images/ff60dabf9e125502f57d62758c9f519c.png" alt="" />
+                  <h5>
+                    wishlist
                   </h5>
                 </div>
               </a>
@@ -226,226 +241,34 @@
     </div>
     <div class="container layout_padding">
       <div class="product_container">
+      
+      <%
+        List<Product> list = ProductDao.getAllProduct();
+        for(Product p : list){
+      %>
         <a href="">
           <div class="product_box">
             <div class="product_img-box">
-              <img src="images/p1.png" alt="" />
+              <img src="product_image/<%=p.getProduct_image() %>" alt="" height="150px" width="150px"   />
               <span>
-                Buy
+                <%=p.getProduct_price() %>
               </span>
             </div>
             <div class="product_detail-box">
               <span>
-                $120.00
+                <%=p.getProduct_name() %>
               </span>
               <p>
-                Passage of Lorem Ipsum, you
+               <%=p.getProduct_category() %>
               </p>
             </div>
           </div>
         </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p2.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $110.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p3.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p4.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p5.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p6.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p7.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p8.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p9.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p10.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p11.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p12.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
+        <%} %>
+        </div>
+        </div>
+        </section>
+       
   <!-- end products section -->
 
   <!-- find section -->
@@ -884,22 +707,22 @@
             <div class="info_social">
               <div>
                 <a href="">
-                  <img src="images/fb.png" alt="">
+                  <img src="images/fb.png" href="https://www.facebook.com/profile.php?id=100005185455198">
                 </a>
               </div>
               <div>
                 <a href="">
-                  <img src="images/twitter.png" alt="">
+                  <img src="images/twitter.png" href="https://twitter.com/thesiya_bhargav">
                 </a>
               </div>
               <div>
                 <a href="">
-                  <img src="images/linkedin.png" alt="">
+                  <img src="images/linkedin.png" href="https://www.linkedin.com/in/bhargav-thesiya-63900524a/">
                 </a>
               </div>
               <div>
                 <a href="">
-                  <img src="images/instagram.png" alt="">
+                  <img src="images/instagram.png" href="https://www.instagram.com/radheinfosys_jnd/">
                 </a>
               </div>
             </div>

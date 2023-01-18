@@ -74,7 +74,7 @@
 
                   <div class="text-center pt-1 mb-5 pb-1">
                     <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"  type="submit" name="action" id="sendMessageButton" value = "signup">Sign up</button>
-                    <a class="text-muted" href="login.jsp" ><p> already have an account?</p></a>
+                    <a class="text-danger" href="login.jsp" ><p> <b>already have an account?</b></p></a>
                   </div>
                   </form>
                   </div>

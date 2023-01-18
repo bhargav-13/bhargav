@@ -4,9 +4,12 @@ public class User {
     
 	private int uid;
 	private String fname,lname,email,mobile,password,usertype;
+	
+	
 	public int getUid() {
 		return uid;
 	}
+	
 	public void setUid(int uid) {
 		this.uid = uid;
 	}

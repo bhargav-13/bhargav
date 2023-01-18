@@ -50,7 +50,7 @@
 
                   <div class="text-center pt-1 mb-5 pb-1">
                     <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit" name ="action" value ="changepassword" >Change password</button>
-                    <a class="text-muted" href="#!">Forgot password?</a>
+                    <a class="text-danger" href="forgot-password.jsp">Forgot password?</a>
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">

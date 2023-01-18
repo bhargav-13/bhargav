@@ -36,7 +36,7 @@
                   <div class="form-outline mb-4">
                     <input type="email" id="form2Example11" class="form-control" id="name" name="email"
                       placeholder="Phone number or email address" />
-                    <label class="form-label" for="form2Example11">email address or phone number</label>
+                    <label class="form-label" for="form2Example11">email address</label>
                   </div>
 
                   <div class="form-outline mb-4">
@@ -46,7 +46,7 @@
 
                   <div class="text-center pt-1 mb-5 pb-1">
                     <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit" name ="action" value ="login" >Login</button>
-                    <a class="text-muted" href="forgot-password.jsp">Forgot password?</a>
+                    <a class="text-danger" href="forgot-password.jsp"><b>Forgot password?</b></a>
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">

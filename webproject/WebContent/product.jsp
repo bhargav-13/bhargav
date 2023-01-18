@@ -1,3 +1,6 @@
+<%@page import="com.dao.ProductDao"%>
+<%@page import="com.bean.Product"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -32,239 +35,35 @@
     <%@include file = "header.jsp" %>
   </div>
 
-  <!-- products section -->
-  <section class="products_section">
-    <div class="heading_container">
-      <h2>
-        New Products In Store
-      </h2>
-      <p>
-        Featured Product Just Arrived
-      </p>
-    </div>
-    <div class="container layout_padding">
+  <div class="container layout_padding">
       <div class="product_container">
+      
+      <%
+        List<Product> list = ProductDao.getAllProduct();
+		  for(Product p : list){
+      %> 
         <a href="">
           <div class="product_box">
             <div class="product_img-box">
-              <img src="images/p1.png" alt="" />
+              <img src="product_image/<%=p.getProduct_image() %>" alt="" height="150px" width="150px"   />
               <span>
-                Buy
+                <%=p.getProduct_price() %>
               </span>
             </div>
             <div class="product_detail-box">
               <span>
-                $120.00
+                <%=p.getProduct_name() %>
               </span>
               <p>
-                Passage of Lorem Ipsum, you
+               <%=p.getProduct_category() %>
               </p>
             </div>
           </div>
         </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p2.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $110.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p3.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p4.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p5.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p6.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p7.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p8.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p9.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p10.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p11.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="product_box">
-            <div class="product_img-box">
-              <img src="images/p12.png" alt="" />
-              <span>
-                Buy
-              </span>
-            </div>
-            <div class="product_detail-box">
-              <span>
-                $150.00
-              </span>
-              <p>
-                Passage of Lorem Ipsum, you
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- end products section -->
+        <%} %>
+        </div>
+        </div>
+        </section>
 
   <!-- find section -->
   <section class="find_section layout_padding-bottom">

@@ -13,6 +13,11 @@
 			<attribute name="javadoc_location" value="https://javaee.github.io/javaee-spec/javadocs/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="F:/jars/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="F:/jars/commons-io-2.3.jar"/>
+	<classpathentry kind="lib" path="F:/jars/javax.activation.jar"/>
+	<classpathentry kind="lib" path="F:/jars/javax.mail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="F:/jars/PaytmChecksum.jar"/>
 	<classpathentry kind="lib" path="C:/Users/BHARGAV/Downloads/mysql-connector-java-5.1.11.jar/mysql-connector-java-5.1.11.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
