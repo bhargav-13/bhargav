@@ -14,6 +14,21 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
+  <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 
   <title>Radhe</title>
 
@@ -35,7 +50,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.jsp">
-            <img src="images/radhe.png" alt="" /><span>
+            <img src="images/radhe.png" alt=""  /><span>
               Radhe
             </span>
           </a>
@@ -82,6 +97,7 @@
                %>
                 <a href="index.jsp">HOME</a>
                 <a href="product.jsp">PRODUCTS</a>
+                <a href="myorder.jsp">My Orders</a>
                 <a href="logout.jsp">logout</a>
                 <a href="changepass.jsp">Change Password</a>
                <%

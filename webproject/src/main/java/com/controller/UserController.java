@@ -1,6 +1,7 @@
 package com.controller;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Random;
 
 import javax.servlet.ServletException;
@@ -10,8 +11,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.bean.Cart;
 import com.bean.User;
+import com.bean.Wishlist;
+import com.dao.CartDao;
 import com.dao.UserDao;
+import com.dao.WishlistDao;
 import com.service.Services;
 
 @WebServlet("/UserController")
@@ -55,6 +60,13 @@ public class UserController extends HttpServlet {
 					HttpSession session = request.getSession();
 					session.setAttribute("u", u);
 					if (u.getUsertype().equals("buyer")) {
+						List<Wishlist> list = WishlistDao.getWishlistbyUsr(u.getUid());
+						int wishlist_count = list.size();
+						  session.setAttribute("wishlist_count", wishlist_count);
+						  
+						  List<Cart> list1 = CartDao.getCartbyuser(u.getUid());
+							int cart_count = list1.size();
+							  session.setAttribute("cart_count", cart_count);
 						request.getRequestDispatcher("index.jsp").forward(request, response);
 					} else {
 						request.getRequestDispatcher("seller-index.jsp").forward(request, response);

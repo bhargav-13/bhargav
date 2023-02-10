@@ -23,6 +23,7 @@
                     style="width: 200px;" alt="">
                   
                 </div>
+                
                 <b style="color: red;">
                 <%
                       if(request.getAttribute("msg")!=null){

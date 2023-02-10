@@ -45,6 +45,26 @@
 			<location>C:/Users/BHARGAV/Downloads/icon1-removebg-preview.png</location>
 		</link>
 		<link>
+			<name>WebContent/images/laptop2-removebg-preview.png</name>
+			<type>1</type>
+			<location>C:/Users/BHARGAV/Downloads/laptop2-removebg-preview.png</location>
+		</link>
+		<link>
+			<name>WebContent/images/laptop3.png</name>
+			<type>1</type>
+			<location>C:/Users/BHARGAV/Downloads/laptop.png</location>
+		</link>
+		<link>
+			<name>WebContent/images/laptop5-removebg-preview.png</name>
+			<type>1</type>
+			<location>C:/Users/BHARGAV/Downloads/laptop5-removebg-preview.png</location>
+		</link>
+		<link>
+			<name>WebContent/images/laptop6-removebg-preview.png</name>
+			<type>1</type>
+			<location>C:/Users/BHARGAV/Downloads/laptop6-removebg-preview.png</location>
+		</link>
+		<link>
 			<name>WebContent/images/mouse-removebg-preview.png</name>
 			<type>1</type>
 			<location>C:/Users/BHARGAV/Downloads/mouse-removebg-preview.png</location>

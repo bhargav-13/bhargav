@@ -42,12 +42,12 @@
         List<Product> list = ProductDao.getAllProduct();
 		  for(Product p : list){
       %> 
-        <a href="">
+        <a href="detail.jsp?pid=<%=p.getPid()%>">
           <div class="product_box">
             <div class="product_img-box">
               <img src="product_image/<%=p.getProduct_image() %>" alt="" height="150px" width="150px"   />
               <span>
-                <%=p.getProduct_price() %>
+                Rs.<%=p.getProduct_price() %>/-
               </span>
             </div>
             <div class="product_detail-box">
