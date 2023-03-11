@@ -89,6 +89,15 @@
                                 <a href="" class="dropdown-item">Cultural history</a>
                                 </div>
                             </div>
+                             <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">BOOKS</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                <a href="orders.jsp" class="dropdown-item">My Orders</a>
+                                <a href="yourbooks.jsp" class="dropdown-item">Your Books</a>
+                                <a href="buy.jsp" class="dropdown-item">BUY</a>
+                                <a href="sell.jsp" class="dropdown-item">Publish a Book</a>                                
+                                </div>
+                            </div>
                             <a href="contact.jsp" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="navbar-nav ml-auto py-0">

@@ -35,14 +35,29 @@
 			<location>C:/Users/BHARGAV/Downloads/20210624_045216.jpg</location>
 		</link>
 		<link>
+			<name>WebContent/img/History-of-India-600x600.png</name>
+			<type>1</type>
+			<location>C:/Users/BHARGAV/Downloads/History-of-India-600x600.png</location>
+		</link>
+		<link>
 			<name>WebContent/img/bhagwan.jpg</name>
 			<type>1</type>
 			<location>C:/Users/BHARGAV/Downloads/bhagwan.jpg</location>
 		</link>
 		<link>
+			<name>WebContent/img/booksindia.png</name>
+			<type>1</type>
+			<location>C:/Users/BHARGAV/Downloads/booksindia.png</location>
+		</link>
+		<link>
 			<name>WebContent/img/chhha.jpg</name>
 			<type>1</type>
 			<location>C:/Users/BHARGAV/Downloads/chhha.jpg</location>
+		</link>
+		<link>
+			<name>WebContent/img/download (2).jpg</name>
+			<type>1</type>
+			<location>C:/Users/BHARGAV/Downloads/download (2).jpg</location>
 		</link>
 		<link>
 			<name>WebContent/img/icon-256x256.png</name>

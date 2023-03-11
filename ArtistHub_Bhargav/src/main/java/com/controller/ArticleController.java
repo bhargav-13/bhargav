@@ -60,7 +60,9 @@ public class ArticleController extends HttpServlet {
      request.setAttribute("msg", "Article Added");
 	 request.getRequestDispatcher("AddArticle.jsp").forward(request, response);
      }
-		
-	}
+     
+     
 
+}
+	
 }
